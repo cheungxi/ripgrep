@@ -5,8 +5,10 @@ directory for a regex pattern. By default, ripgrep will respect gitignore rules
 and automatically skip hidden files/directories and binary files. (To disable
 all automatic filtering by default, use `rg -uuu`.) ripgrep has first class
 support on Windows, macOS and Linux, with binary downloads available for [every
-release](https://github.com/BurntSushi/ripgrep/releases). ripgrep is similar to
-other popular search tools like The Silver Searcher, ack and grep.
+release](https://github.com/BurntSushi/ripgrep/releases). Precompiled binaries
+are also available for various architectures including ARM, RISC-V, s390x, and
+LoongArch. ripgrep is similar to other popular search tools like The Silver
+Searcher, ack and grep.
 
 [![Build status](https://github.com/BurntSushi/ripgrep/workflows/ci/badge.svg)](https://github.com/BurntSushi/ripgrep/actions)
 [![Crates.io](https://img.shields.io/crates/v/ripgrep.svg)](https://crates.io/crates/ripgrep)
@@ -238,6 +240,11 @@ The binary name for ripgrep is `rg`.
 macOS and Linux.](https://github.com/BurntSushi/ripgrep/releases)** Linux and
 Windows binaries are static executables. Users of platforms not explicitly
 mentioned below are advised to download one of these archives.
+
+Linux binaries are available for multiple architectures including x86_64,
+i686, ARM (armv7), aarch64, s390x, RISC-V, and **LoongArch** (loongarch64).
+Users on LoongArch systems can download the `loongarch64-unknown-linux-gnu`
+binary from the [releases page](https://github.com/BurntSushi/ripgrep/releases).
 
 If you're a **macOS Homebrew** or a **Linuxbrew** user, then you can install
 ripgrep from homebrew-core:
