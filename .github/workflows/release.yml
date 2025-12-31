@@ -168,6 +168,8 @@ jobs:
         # We install it from git for LoongArch targets.
         # Commit 4090beca3cfffa44371a5bba524de3a578aa46c3 is from November 2024,
         # ~600 commits after v0.2.5, and includes LoongArch support.
+        # Note: Building from source adds ~5-10 minutes but only for LoongArch builds.
+        # This is acceptable until cross v0.2.6+ is released with LoongArch support.
         if [[ "${{ matrix.target }}" == loongarch64* ]]; then
           cargo install --git https://github.com/cross-rs/cross --rev 4090beca3cfffa44371a5bba524de3a578aa46c3 cross
         else
