@@ -2,6 +2,12 @@ TBD
 ===
 Unreleased changes. Release notes have not yet been written.
 
+Platform support:
+
+* [FEATURE](https://github.com/cheungxi/ripgrep/pull/TBD):
+  Add support for LoongArch architecture. Precompiled binaries for
+  `loongarch64-unknown-linux-gnu` are now available in releases.
+
 Bug fixes:
 
 * [BUG #3212](https://github.com/BurntSushi/ripgrep/pull/3212):
